@@ -1,0 +1,36 @@
+{
+  "name": "indaco/instantseo",
+  "description": "PrestaShop 1.7.6 module to add Schema.org Structured Data to your shop.",
+  "minimum-stability": "stable",
+  "license": "AFL-3.0",
+  "authors": [
+    {
+      "name": "indaco",
+      "email": "hi@example.dev"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.33"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.19.1",
+    "prestashop/php-dev-tools": "^3.16.0",
+    "prestashop/autoindex": "^1.0.0"
+  },
+  "scripts": {
+    "autoindex": "@php ./vendor/bin/autoindex prestashop:add:index",
+    "cs-fix": "@php ./vendor/bin/php-cs-fixer fix",
+    "cs-test": "@php ./vendor/bin/php-cs-fixer fix --dry-run --stop-on-violation --show-progress=dot ."
+  },
+  "scripts-descriptions": {
+    "autoindex": "Automatically add an index.php in all directories recursively",
+    "cs-fix": "Check and fix coding styles using PHP CS Fixer",
+    "cs-test": "Check if Module code respect the coding standards"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "type": "prestashop-module",
+  "homepage": "https://github.com/indaco/instantseo"
+}
