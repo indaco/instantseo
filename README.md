@@ -10,7 +10,6 @@ It handles the following:
 - Breadcrumbs
 - Organization (with Socials)
 - LocalBusiness
-- Products Catalog
 
 ## Prerequisites
 
@@ -35,10 +34,6 @@ Below are the screenshots for the configuration settings:
 ### Local Business
 
 ![LocalBusiness](screenshots/4_Local_Business.png)
-
-### Products Catalog & Combinations
-
-![Catalog](screenshots/5_Products_Catalog.png)
 
 ### License
 
