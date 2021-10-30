@@ -120,7 +120,7 @@ class InstantSeoGetContentController
         return [
             'form' => [
                 'legend' => [
-                    'title' => $this->translator->trans('Settings', [], 'Modules.InstantSeo.Settings'),
+                    'title' => $this->translator->trans('Settings', [], 'Modules.Instantseo.Admin'),
                     'icon' => 'icon-cogs',
                 ],
                 'tabs' => [
@@ -134,98 +134,98 @@ class InstantSeoGetContentController
                     [
                         'tab' => 'WebSite',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Show Web Site', [], 'Modules.InstantSeo.ShowWebsiteLabel'),
+                        'label' => $this->translator->trans('Show Web Site', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_WEBSITE',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show Website structured data', [], 'Modules.InstantSeo.ShowWebsiteDesc'),
+                        'desc' => $this->translator->trans('Show Website structured data', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'WebSite',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Show Web Page', [], 'Modules.InstantSeo.ShowWebpageLabel'),
+                        'label' => $this->translator->trans('Show Web Page', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_WEBPAGE',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show Website structured data', [], 'Modules.InstantSeo.ShowWebsiteDesc'),
+                        'desc' => $this->translator->trans('Show Website structured data', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'WebSite',
                         'type' => 'textarea',
-                        'label' => $this->translator->trans('Keywords', [], 'Modules.InstantSeo.WebsiteKeywordsLabel'),
+                        'label' => $this->translator->trans('Keywords', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'WEBSITE_KEYWORDS',
                         'prefix' => '<i class="icon icon-key"></i>',
-                        'desc' => $this->translator->trans('Keywords describing your shop', [], 'Modules.InstantSeo.WebsiteKeywordsDesc'),
+                        'desc' => $this->translator->trans('Keywords describing your shop', [], 'Modules.Instantseo.Admin'),
                         'col' => 3,
                     ],
                     [
                         'tab' => 'SNEBC',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Enable SiteNavigationElement', [], 'Modules.InstantSeo.ShowWebsiteSiteNavigationElementLabel'),
+                        'label' => $this->translator->trans('Enable SiteNavigationElement', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_WEBSITE_SITENAVIGATIONELEMENT',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show the Site Navigation Element structured data', [], 'Modules.InstantSeo.ShowWebsiteSiteNavigationElementDesc') . '<br />',
+                        'desc' => $this->translator->trans('Show the Site Navigation Element structured data', [], 'Modules.Instantseo.Admin') . '<br />',
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'SNEBC',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Enable Breadcrumbs', [], 'Modules.InstantSeo.ShowWebsiteBreadcrumbsLabel'),
+                        'label' => $this->translator->trans('Enable Breadcrumbs', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_WEBSITE_BREADCRUMBS',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show the Breadcrumbs structured data', [], 'Modules.InstantSeo.ShowWebsiteBreadcrumbsDesc') . '<br />',
+                        'desc' => $this->translator->trans('Show the Breadcrumbs structured data', [], 'Modules.Instantseo.Admin') . '<br />',
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => "SNEBC",
                         'type' => 'checkbox',
-                        'label' => $this->translator->trans('CMS Pages to be included', [], 'Modules.InstantSeo.CMSPagesLabel'),
+                        'label' => $this->translator->trans('CMS Pages to be included', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'CMS_PAGES',
-                        'desc' => $this->translator->trans('Select all you wish.', [], 'Modules.InstantSeo.CMSPagesDesc'),
+                        'desc' => $this->translator->trans('Select all you wish.', [], 'Modules.Instantseo.Admin'),
                         'values' => array(
                             'query' => $this->cmsPages,
                             'id' => 'id_cms',
@@ -242,126 +242,126 @@ class InstantSeoGetContentController
                     [
                         'tab' => 'WebSite',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Enable Sitelinks Searchbox', [], 'Modules.InstantSeo.ShowWebsiteSitelinksSearchboxLabel'),
+                        'label' => $this->translator->trans('Enable Sitelinks Searchbox', [], 'Modules.InstantS+seo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_WEBSITE_SEARCHBOX',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show the Website Sitelinks Searchbox structured data', [], 'Modules.InstantSeo.ShowWebsiteSitelinksSearchboxDesc') . '<br />',
+                        'desc' => $this->translator->trans('Show the Website Sitelinks Searchbox structured data', [], 'Modules.Instantseo.Admin') . '<br />',
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'Organization',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Show Organization', [], 'Modules.InstantSeo.ShowOrganizationLabel'),
+                        'label' => $this->translator->trans('Show Organization', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_ORGANIZATION',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show the Organization structured data', [], 'Modules.InstantSeo.ShowOrganizationDesc'),
+                        'desc' => $this->translator->trans('Show the Organization structured data', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'Organization',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Logo', [], 'Modules.InstantSeo.ShowOrganizationLogoLabel'),
+                        'label' => $this->translator->trans('Logo', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_ORGANIZATION_LOGO',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show the Organization Logo.', [], 'Modules.InstantSeo.ShowOrganizationLogoDesc'),
+                        'desc' => $this->translator->trans('Show the Organization Logo.', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'Organization',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Description:', [], 'Modules.InstantSeo.OrganizationDescLabel'),
+                        'label' => $this->translator->trans('Description:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'ORGANIZATION_DESC',
-                        'desc' => $this->translator->trans('Short description of your business', [], 'Modules.InstantSeo.OrganizationDescDesc'),
+                        'desc' => $this->translator->trans('Short description of your business', [], 'Modules.Instantseo.Admin'),
                         'col' => 3
                     ],
                     [
                         'tab' => 'Organization',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Contact Point', [], 'Modules.InstantSeo.ShowOrganizationContactPointLabel'),
+                        'label' => $this->translator->trans('Contact Point', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_ORGANIZATION_CONTACT',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show the Organization Contact Point structured data', [], 'Modules.InstantSeo.ShowOrganizationContactPointDesc'),
+                        'desc' => $this->translator->trans('Show the Organization Contact Point structured data', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'Organization',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Email', [], 'Modules.InstantSeo.OrganizationContactEmailLabel'),
+                        'label' => $this->translator->trans('Email', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'ORGANIZATION_CONTACT_EMAIL',
                         'prefix' => '<i class="icon icon-envelope"></i>',
-                        'desc' => $this->translator->trans('Email address, if other than main', [], 'Modules.InstantSeo.OrganizationContactEmailDesc') . ': ' . Configuration::get('PS_SHOP_EMAIL'),
+                        'desc' => $this->translator->trans('Email address, if other than main', [], 'Modules.Instantseo.Admin') . ': ' . Configuration::get('PS_SHOP_EMAIL'),
                         'col' => 3
                     ],
                     [
                         'tab' => 'Organization',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Telephone:', [], 'Modules.InstantSeo.OrganizationContactTelephoneLabel'),
+                        'label' => $this->translator->trans('Telephone:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'ORGANIZATION_CONTACT_TELEPHONE',
                         'prefix' => '<i class="icon icon-phone"></i>',
-                        'desc' => $this->translator->trans('Organization telephone number (optional)', [], 'Modules.InstantSeo.OrganizationContactTelephoneDesc'),
+                        'desc' => $this->translator->trans('Organization telephone number (optional)', [], 'Modules.Instantseo.Admin'),
                         'col' => 3
                     ],
                     [
                         'tab' => 'Organization',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Show Facebook page', [], 'Modules.InstantSeo.FacebookPageLabel'),
+                        'label' => $this->translator->trans('Show Facebook page', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_ORGANIZATION_FACEBOOK',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show Facebook page URL in Organization structured data.', [], 'Modules.InstantSeo.FacebookPageDesc'),
+                        'desc' => $this->translator->trans('Show Facebook page URL in Organization structured data.', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
@@ -369,7 +369,7 @@ class InstantSeoGetContentController
                         'tab' => 'Organization',
                         'type' => 'text',
                         'name' => $this->module->module_prefix . 'ORGANIZATION_FACEBOOK',
-                        'label' => $this->translator->trans('Facebook Fan page URL:', [], 'Modules.InstantSeo.FacebookUrlLabel'),
+                        'label' => $this->translator->trans('Facebook Fan page URL:', [], 'Modules.Instantseo.Admin'),
                         'prefix' => '<i class="icon icon-facebook"></i>',
                         'desc' => ' https://www.facebook.com/YourPage',
                         'col' => 4
@@ -377,27 +377,27 @@ class InstantSeoGetContentController
                     [
                         'tab' => 'Organization',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Show Twitter page', [], 'Modules.InstantSeo.TwitterPageLabel'),
+                        'label' => $this->translator->trans('Show Twitter page', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_ORGANIZATION_TWITTER',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show Twitter page URL in Organization structured data.', [], 'Modules.InstantSeo.TwitterPageDesc'),
+                        'desc' => $this->translator->trans('Show Twitter page URL in Organization structured data.', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'Organization',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Twitter page URL:', [], 'Modules.InstantSeo.TwitterUrlLabel'),
+                        'label' => $this->translator->trans('Twitter page URL:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'ORGANIZATION_TWITTER',
                         'prefix' => '<i class="icon icon-twitter"></i>',
                         'desc' => ' https://www.twitter.com/YourPage',
@@ -406,27 +406,27 @@ class InstantSeoGetContentController
                     [
                         'tab' => 'Organization',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Show Instagram page', [], 'Modules.InstantSeo.InstagramPageLabel'),
+                        'label' => $this->translator->trans('Show Instagram page', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_ORGANIZATION_INSTAGRAM',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show Instagram page URL in Organization structured data.', [], 'Modules.InstantSeo.InstagramPageDesc'),
+                        'desc' => $this->translator->trans('Show Instagram page URL in Organization structured data.', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'Organization',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Instagram page URL:', [], 'Modules.InstantSeo.InstagramUrlLabel'),
+                        'label' => $this->translator->trans('Instagram page URL:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'ORGANIZATION_INSTAGRAM',
                         'prefix' => '<i class="icon icon-instagram"></i>',
                         'desc' => ' https://www.instagram.com/YourPage',
@@ -435,29 +435,29 @@ class InstantSeoGetContentController
                     [
                         'tab' => 'LocalBusiness',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Show LocalBusiness', [], 'Modules.InstantSeo.LocalBusinessLabel'),
+                        'label' => $this->translator->trans('Show LocalBusiness', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_LOCALBUSINESS',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show LocalBusiness structured data', [], 'Modules.InstantSeo.LocalBusinessDesc'),
+                        'desc' => $this->translator->trans('Show LocalBusiness structured data', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                     [
                         'tab' => 'LocalBusiness',
                         'type' => 'select',
-                        'label' => $this->translator->trans('Select LocalBusiness type:', [], 'Modules.InstantSeo.LocalBusinessTypeLabel'),
+                        'label' => $this->translator->trans('Select LocalBusiness type:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_TYPE',
-                        'desc' => $this->translator->trans('', [], 'Modules.InstantSeo.LocalBusinessTypeDesc'),
+                        'desc' => $this->translator->trans('', [], 'Modules.Instantseo.Admin'),
                         'required' => true,
                         'options' => [
                             'query' => [
@@ -477,29 +477,29 @@ class InstantSeoGetContentController
                     [
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Name of store:', [], 'Modules.InstantSeo.StoreNameLabel'),
+                        'label' => $this->translator->trans('Name of store:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_STORENAME',
                         'col' => 3
                     ],
                     [
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Description:', [], 'Modules.InstantSeo.LocalBusinessLabel'),
+                        'label' => $this->translator->trans('Description:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_DESC',
-                        'desc' => $this->translator->trans('Short description of your business', [], 'Modules.InstantSeo.LocalBusinessDesc'),
+                        'desc' => $this->translator->trans('Short description of your business', [], 'Modules.Instantseo.Admin'),
                         'col' => 3
                     ],
                     [
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Tax id:', [], 'Modules.InstantSeo.LocalBusinessVATLabel'),
+                        'label' => $this->translator->trans('Tax id:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_VAT',
                         'col' => 3
                     ],
                     [
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Street:', [], 'Modules.InstantSeo.LocalBusinessStreetLabel'),
+                        'label' => $this->translator->trans('Street:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_STREET',
                         'col' => 3
                     ],
@@ -507,7 +507,7 @@ class InstantSeoGetContentController
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
                         'prefix' => '<i class="icon icon-flag"></i>',
-                        'label' => $this->translator->trans('Country:', [], 'Modules.InstantSeo.LocalBusinessCountryLabel'),
+                        'label' => $this->translator->trans('Country:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_COUNTRY',
                         'col' => 3
                     ],
@@ -515,21 +515,21 @@ class InstantSeoGetContentController
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
                         'prefix' => '<i class="icon icon-globe "></i>',
-                        'label' => $this->translator->trans('Region:', [], 'Modules.InstantSeo.LocalBusinessRegionLabel'),
+                        'label' => $this->translator->trans('Region:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_REGION',
                         'col' => 3
                     ],
                     [
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Postal code:', [], 'Modules.InstantSeo.LocalBusinessPostalCodeLabel'),
+                        'label' => $this->translator->trans('Postal code:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_CODE',
                         'col' => 3
                     ],
                     [
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
-                        'label' => $this->translator->trans('Locality:', [], 'Modules.InstantSeo.LocalBusinessLocalityLabel'),
+                        'label' => $this->translator->trans('Locality:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_LOCALITY',
                         'col' => 3
                     ],
@@ -537,28 +537,28 @@ class InstantSeoGetContentController
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
                         'prefix' => '<i class="icon icon-phone"></i>',
-                        'label' => $this->translator->trans('Telephone:', [], 'Modules.InstantSeo.LocalBusinessPhoneLabel'),
+                        'label' => $this->translator->trans('Telephone:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_PHONE',
-                        'desc' => $this->translator->trans('Telephone if other than main', [], 'Modules.InstantSeo.LocalBusinessPhoneDesc'),
+                        'desc' => $this->translator->trans('Telephone if other than main', [], 'Modules.Instantseo.Admin'),
                         'col' => 3
                     ],
                     [
                         'tab' => 'LocalBusiness',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Show GPS coordinates', [], 'Modules.InstantSeo.GPSLatLonLabel'),
+                        'label' => $this->translator->trans('Show GPS coordinates', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_GPS_SHOW',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show Local Business GPS coordinates', [], 'Modules.InstantSeo.GPSLatLonDesc'),
+                        'desc' => $this->translator->trans('Show Local Business GPS coordinates', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
@@ -566,7 +566,7 @@ class InstantSeoGetContentController
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
                         'prefix' => '<i class="icon icon-map-marker"></i>',
-                        'label' => $this->translator->trans('GPS latitude', [], 'Modules.InstantSeo.GPSLatLabel'),
+                        'label' => $this->translator->trans('GPS latitude', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_GPS_LAT',
                         'col' => 3
                     ],
@@ -574,33 +574,33 @@ class InstantSeoGetContentController
                         'tab' => 'LocalBusiness',
                         'type' => 'text',
                         'prefix' => '<i class="icon icon-map-marker"></i>',
-                        'label' => $this->translator->trans('GPS longitude:', [], 'Modules.InstantSeo.GPSLonLabel'),
+                        'label' => $this->translator->trans('GPS longitude:', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'LOCALBUSINESS_GPS_LON',
                         'col' => 3
                     ],
                     [
                         'tab' => 'Catalog',
                         'type' => 'switch',
-                        'label' => $this->translator->trans('Show Products', [], 'Modules.InstantSeo.CatalogProductsLabel'),
+                        'label' => $this->translator->trans('Show Products', [], 'Modules.Instantseo.Admin'),
                         'name' => $this->module->module_prefix . 'SHOW_CATALOG_PRODUCTS',
                         'is_bool' => true,
-                        'desc' => $this->translator->trans('Show structured data for Products and Combinations', [], 'Modules.InstantSeo.CatalogProductsDesc'),
+                        'desc' => $this->translator->trans('Show structured data for Products and Combinations', [], 'Modules.Instantseo.Admin'),
                         'values' => [
                             [
                                 'id' => 'active_on',
                                 'value' => true,
-                                'label' => $this->translator->trans('Show', [], 'Modules.InstantSeo.Show'),
+                                'label' => $this->translator->trans('Show', [], 'Modules.Instantseo.Admin'),
                             ],
                             [
                                 'id' => 'active_off',
                                 'value' => false,
-                                'label' => $this->translator->trans('Hide', [], 'Modules.InstantSeo.Hide'),
+                                'label' => $this->translator->trans('Hide', [], 'Modules.Instantseo.Admin'),
                             ],
                         ],
                     ],
                 ],
                 'submit' => [
-                    'title' => $this->translator->trans('Save', [], 'Modules.InstantSeo.Save'),
+                    'title' => $this->translator->trans('Save', [], 'Modules.Instantseo.Admin'),
                     'class' => 'btn btn-default pull-right',
                 ],
             ],
@@ -693,9 +693,9 @@ class InstantSeoGetContentController
         if ((bool)Tools::isSubmit('submit' . $this->module->name)) {
             $form_values = $this->getFormValues();
             if (!$this->postProcess($form_values)) {
-                $output .= $this->module->displayError($this->translator->trans('Invalid Configuration value', [], 'Modules.InstantSeo.SettingsNotUpdated'));
+                $output .= $this->module->displayError($this->translator->trans('Invalid Configuration value', [], 'Modules.Instantseo.Admin'));
             } else {
-                $output .= $this->module->displayConfirmation($this->translator->trans('Settings updated', [], 'Modules.InstantSeo.SettingsUpdated'));
+                $output .= $this->module->displayConfirmation($this->translator->trans('Settings updated', [], 'Modules.Instantseo.Admin'));
             }
         }
         unset($form_values);

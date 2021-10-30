@@ -46,9 +46,9 @@ class InstantSeo extends Module
 
         parent::__construct();
 
-        $this->displayName = $this->trans('InstantSEO - Schema.org types builder', [], 'Modules.InstantSeo.Admin');
-        $this->description = $this->trans('Prestashop module to easily add Schema.org Structured Data to your shop.', [], 'Modules.InstantSeo.Admin');
-        $this->confirmUninstall = $this->trans('Are you sure you want to uninstall?', [], 'Modules.InstantSeo.Admin');
+        $this->displayName = $this->trans('InstantSEO - Schema.org types builder', [], 'Modules.Instantseo.Admin');
+        $this->description = $this->trans('Prestashop module to easily add Schema.org Structured Data to your shop.', [], 'Modules.Instantseo.Admin');
+        $this->confirmUninstall = $this->trans('Are you sure you want to uninstall?', [], 'Modules.Instantseo.Admin');
 
         $this->module_prefix = Tools::strtoupper($this->name) . '_';
         $this->sql_path = dirname(__FILE__) . '/sql/';
